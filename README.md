@@ -10,9 +10,10 @@
 
 **Content**
 1. **Report_images**: Contains all figures displayed in the report.
-2. **Scripts**: Includes two subfolders:
-   2.1 Custom-pipeline: Contains scripts used for the analysis pipeline.
-   2.2 Visualizations: Contains scripts used for data visualization.
+2. **Scripts**: Includes three subfolders:
+   2.1 Custom-pipeline: Contains scripts used for the analysis pipeline. 
+   2.2 Data preperation: Contains scripts used for data preperation. 
+   2.3 Visualizations: Contains scripts used for data visualization.
 4. **Literature_tables**: Summarizes comprehensive literature reviews of pathogenic microbes referenced in the report.
 5. **Quality_Control**: Includes FastQC reports before and after filtering and trimming.
 6. **Other**: Contains additional analyses performed on the data.
