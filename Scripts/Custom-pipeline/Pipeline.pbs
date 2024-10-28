@@ -67,8 +67,6 @@ do
     REVERSE_READS=${FORWARD_READS/_R1_paired.fastq.gz/_R2_paired.fastq.gz}
     BASE_NAME=$(basename $FORWARD_READS _R1_paired.fastq.gz)
 
-kraken2 --db <path_to_db> --threads <num_threads> --report report.tsv --use-mpa-style *_kraken2
-
     kraken2 --db $DB_PATH --paired $FORWARD_READS $REVERSE_READS --output ~/Step2/results/kraken/${BASE_NAME}_kraken2.out --report re$
 done
 
