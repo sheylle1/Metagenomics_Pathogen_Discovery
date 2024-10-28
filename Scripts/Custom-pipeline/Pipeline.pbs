@@ -1,1 +1,85 @@
+#!/bin/bash
 
+#PBS -N Full_Pipeline
+#PBS -l nodes=1:ppn=8
+#PBS -l walltime=24:00:00
+#PBS -l mem=64gb
+#PBS -e full_pipeline.err
+#PBS -o full_pipeline.out
+#PBS -M 24791849@sun.ac.za
+#PBS -m abe
+#PBS -q bix
+
+module load app/Java
+module load app/Trimmomatic
+module load app/fastqc
+module load app/multiqc
+module load app/SPAdes
+module load app/kraken2
+module load app/bracken/2.7
+module load app/NCBI
+
+
+# Change to the directory from which the job was submitted
+cd $PBS_O_WORKDIR
+
+# Step 1: FastQC before trimming
+
+fastqc -o ~/Step2/results/fastqc_pre_trim ~/Step2/fastq_data/*_R1_001.fastq.gz ~/Step2/fastq_data/*_R2_001.fastq.gz
+
+# Step 2: Trimming with Trimmomatic
+for FORWARD_READS in ~/Step2/fastq_data/*_R1_001.fastq.gz
+do
+    REVERSE_READS=${FORWARD_READS/_R1_001.fastq.gz/_R2_001.fastq.gz}
+    BASE_NAME=$(basename $FORWARD_READS _R1_001.fastq.gz)
+    OUTPUT_FORWARD_PAIRED=~/Step2/results/trimmed/${BASE_NAME}_R1_paired.fastq.gz
+    OUTPUT_FORWARD_UNPAIRED=~/Step2/results/trimmed/${BASE_NAME}_R1_unpaired.fastq.gz
+    OUTPUT_REVERSE_PAIRED=~/Step2/results/trimmed/${BASE_NAME}_R2_paired.fastq.gz
+    OUTPUT_REVERSE_UNPAIRED=~/Step2/results/trimmed/${BASE_NAME}_R2_unpaired.fastq.gz
+
+    trimmomatic PE \
+        -threads 8 \
+        -phred33 \
+        $FORWARD_READS $REVERSE_READS \
+        $OUTPUT_FORWARD_PAIRED $OUTPUT_FORWARD_UNPAIRED \
+        $OUTPUT_REVERSE_PAIRED $OUTPUT_REVERSE_UNPAIRED \
+        ILLUMINACLIP:/new-apps/Trimmomatic/0.39/adapters/TruSeq3-PE-2.fa:2:30:10 \
+        LEADING:3 \
+        TRAILING:3 \
+        SLIDINGWINDOW:4:15 \
+        MINLEN:36
+done
+
+# Step 3: FastQC after trimming
+fastqc -o ~/Step2/results/fastqc_post_trim ~/Step2/results/trimmed/*_paired.fastq.gz
+
+# Step 4: MultiQC for QC reports
+multiqc ~/Step2/results/fastqc_pre_trim/ -o ~/Step2/results/multiqc_pre_trim
+multiqc ~/Step2/results/fastqc_post_trim/ -o ~/Step2/results/multiqc_post_trim
+
+echo "Step 1-4: Trimmomatic and MultiQC completed on $(date)"
+
+
+# Step 5: Kraken2 classification
+DB_PATH="/new-home/databases/kraken.db/standard"
+for FORWARD_READS in ~/Step2/results/trimmed/*_R1_paired.fastq.gz
+do
+    REVERSE_READS=${FORWARD_READS/_R1_paired.fastq.gz/_R2_paired.fastq.gz}
+    BASE_NAME=$(basename $FORWARD_READS _R1_paired.fastq.gz)
+
+kraken2 --db <path_to_db> --threads <num_threads> --report report.tsv --use-mpa-style *_kraken2
+
+    kraken2 --db $DB_PATH --paired $FORWARD_READS $REVERSE_READS --output ~/Step2/results/kraken/${BASE_NAME}_kraken2.out --report re$
+done
+
+echo "Step 5: Kraken2 processing completed on $(date)"
+
+# Step 6: Bracken abundance estimation
+for KRAKEN_REPORT in ~/Step2/results/kraken/*_kraken2_report.txt
+do
+    BASE_NAME=$(basename $KRAKEN_REPORT _kraken2_report.txt)
+
+    bracken -d $DB_PATH -i $KRAKEN_REPORT -o ~/Step2/results/bracken/${BASE_NAME}_bracken_output.txt -r 150 -l S
+done
+
+echo "Step 6: Bracken processing completed on $(date)"
