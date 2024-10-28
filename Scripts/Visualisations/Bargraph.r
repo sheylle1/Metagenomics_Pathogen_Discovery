@@ -5,6 +5,7 @@ library(reshape2)
 library(ggpattern)
 
 # Data preparation
+# Can also load csv file here instead!
 data <- data.frame(
   Patient = c("1", "2", "3", "4", "1", "2", "3", "4"),
   Sample_ID = c("S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8"),
