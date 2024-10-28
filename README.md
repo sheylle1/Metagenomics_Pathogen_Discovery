@@ -18,5 +18,5 @@
 
    2.3 Visualizations: Contains scripts used for data visualization.
 4. **Literature_tables**: Summarizes comprehensive literature reviews of pathogenic microbes referenced in the report.
-5. **Quality_Control**: Includes FastQC reports before and after filtering and trimming.
+5. **Quality_Control**: Includes MultiQC reports before and after filtering and trimming.
 6. **Other**: Contains additional analyses performed on the data.
