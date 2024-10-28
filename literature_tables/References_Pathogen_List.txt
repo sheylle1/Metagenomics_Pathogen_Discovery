@@ -1,1 +1,13 @@
+Viral References
+[1]	 Royston, L. and Tapparel, C. (2016). Rhinoviruses and Respiratory Enteroviruses: Not as Simple as ABC. Viruses, [online] 8(1), p.16. doi:https://doi.org/10.3390/v8010016.
+[2]	Sinclair, W. and Omar, M. (2021). Enterovirus. [online] Nih.gov. Available at: https://www.ncbi.nlm.nih.gov/books/NBK562330/.
+[3]	www.cdc.gov. (2019). Human Parainfluenza Viruses | Home | About HPIVs | CDC. [online] Available at: https://www.cdc.gov/parainfluenza/about/index.html.
+[4]	Cleveland Clinic. (2022). Parainfluenza: Causes, Symptoms, Diagnosis & Treatment. [online] Available at: https://my.clevelandclinic.org/health/diseases/24522-parainfluenza. Coleman, 
+[5]	A. and Gern, J.E. (2016). Viral-Induced Wheeze and Asthma Development. Allergy, Immunity and Tolerance in Early Childhood, [online] pp.65–82. doi:https://doi.org/10.1016/B978-0-12-420226-9.00005-X.
+[6]	Mayo Clinic (2018). Parvovirus infection - Symptoms and causes. [online] Mayo Clinic. Available at: https://www.mayoclinic.org/diseases-conditions/parvovirus-infection/symptoms-causes/syc-20376085.
+[7]	www.european-virus-archive.com. (n.d.). Human betaherpesvirus 5 (Cytomegalovirus) | EVAg. [online] Available at: https://www.european-virus-archive.com/virus/human-betaherpesvirus-5-cytomegalovirus-3. 
+[8]	Cleveland Clinic (2022). Epstein-Barr Virus (EBV) - Symptoms, Causes & Treatment. [online] Cleveland Clinic. Available at: https://my.clevelandclinic.org/health/diseases/23469-epstein-barr-virus. 
+[9]	Black, J.B. and Pellett, P.E. (1999). Human herpesvirus 7. 9(4), pp.245–262. doi:https://doi.org/10.1002/(sici)1099-1654(199910/12)9:4%3C245::aid-rmv253%3E3.0.co;2-i.
+[10]	Louis, S., Le, B.-M., Demertzis, L., Wu, G., Tibbets, R., Buller, R., Arens, M., Gaynor, A., Storch, G. and Wang, D. (n.d.). Clinical and Epidemiologic Characterization of WU Polyomavirus Infection. [online] Available at: https://wwwnc.cdc.gov/eid/article/13/12/pdfs/07-0977.pdf [Accessed 28 Oct. 2024].
+[11]	Mercier, L. (2024). Pegivirus ~ ViralZone. [online] Expasy.org. Available at: https://viralzone.expasy.org/4860 [Accessed 28 Oct. 2024].
 
