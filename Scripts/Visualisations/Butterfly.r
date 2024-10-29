@@ -2,7 +2,10 @@
 library(ggplot2)
 library(reshape2)
 
-# Create sample data
+# Load your data
+data <- read.csv("D:/Umoya/Data/Patient3.csv")
+
+# Example of sample data from patient 3
 data <- data.frame(
   Pathogens = c("K.pneumoniae", "S. pneumoniae", "Enterovirus D", "E.coli", "S. maltophilia", "V. parahaemolticus", "S,aurues", "N, gonorrhoeae", "B. cereus"),
   Treated = c(6000, 1000, 280, 220, 115, 90, 70, 70, 68 ),   # (negative side)
