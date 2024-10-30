@@ -12,7 +12,7 @@ Viral References
 [11]	Mercier, L. (2024). Pegivirus ~ ViralZone. [online] Expasy.org. Available at: https://viralzone.expasy.org/4860 [Accessed 28 Oct. 2024].
 
 Bacterial References
-[1] Murphy, Timothy F. and Parameswaran, G.  Iyer (2009). Moraxella catarrhalis,a Human Respiratory Tract Pathogen. Clinical Infectious Diseases, [online] 49(1), pp.124–131. doi:https://doi.org/10.1086/599375.
+[1]   Murphy, Timothy F. and Parameswaran, G.  Iyer (2009). Moraxella catarrhalis,a Human Respiratory Tract Pathogen. Clinical Infectious Diseases, [online] 49(1), pp.124–131. doi:https://doi.org/10.1086/599375.
 [2]	Kwon, Y.-S., Koh, W.-J. and Daley, C.L. (2019). Treatment of Mycobacterium avium Complex Pulmonary Disease. Tuberculosis and Respiratory Diseases, [online] 82(1), pp.15–26. doi:https://doi.org/10.4046/trd.2018.0060.
 [3]	Taylor, T.A. and Unakal, C.G. (2023). Staphylococcus aureus infection. [online] National Library of Medicine. Available at: https://www.ncbi.nlm.nih.gov/books/NBK441868/.
 [4]	Sanchez, E. (2020). Pneumococcal Infections (Streptococcus pneumoniae): Practice Essentials, Background, Pathophysiology. eMedicine. [online] Available at: https://emedicine.medscape.com/article/225811-overview.
