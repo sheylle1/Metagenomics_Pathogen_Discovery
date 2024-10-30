@@ -1,5 +1,7 @@
 # Metagenomics_Pathogen_Discovery
 
+Github repository for "Metagenomics for Pathogen Discovery in Children with Respiratory Infections"
+
 **Abstract**
 
 **Background**: Respiratory tract infections (RTIs) are a leading cause of morbidity and mortality among children, particularly in South Africa, where they account for a significant proportion of pediatric deaths. Conventional diagnostic methods often delay treatment, necessitating innovative approaches for rapid pathogen detection. This study evaluates the efficacy of shotgun metagenomic next-generation sequencing (mNGS) combined with Benzonase® Nuclease treatment in identifying pathogens in pediatric patients presenting with respiratory symptoms.
