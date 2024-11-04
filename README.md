@@ -20,4 +20,5 @@ Github repository for "Metagenomics for Pathogen Discovery in Children with Resp
 
    2.3 Visualizations: Contains scripts used for data visualization.
 4. **Literature_tables**: Summarizes comprehensive literature reviews of pathogenic microbes referenced in the report.
-5. **Other**: Contains additional analyses performed on the data.
+5. **PCR_Reports**: This includes the ALLPlex viral PCR assay
+6. **Other**: Contains additional analyses performed on the data.
