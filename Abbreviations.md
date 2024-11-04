@@ -8,6 +8,7 @@
 | RNA               | Ribonucleic Acid                             |
 | NPA               | Nasopharyngeal Aspirate                      |
 | HIV               | Human Immunodeficiency Virus                 |
+| uL                | Microliters                                  |
 | H. influenzae     | Haemophilus influenzae                       |
 | M. catarrhalis    | Moraxella catarrhalis                        |
 | H. ducreyi        | Haemophilus ducreyi                          |
