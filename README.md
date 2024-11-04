@@ -4,11 +4,11 @@ Github repository for "Metagenomics for Pathogen Discovery in Children with Resp
 
 **Abstract**
 
-**Background**: Respiratory tract infections (RTIs) are a leading cause of morbidity and mortality among children, particularly in South Africa, where they account for a significant proportion of pediatric deaths. Conventional diagnostic methods often delay treatment, necessitating innovative approaches for rapid pathogen detection. This study evaluates the efficacy of shotgun metagenomic next-generation sequencing (mNGS) combined with Benzonase® Nuclease treatment in identifying pathogens in pediatric patients presenting with respiratory symptoms.
+**Background**: Respiratory tract infections (RTIs) are a leading cause of morbidity and mortality among children. Conventional diagnostic methods have limitations for pathogen detection, which may delay effective treatment, necessitating innovative approaches for rapid pathogen detection. This study evaluates the efficacy of shotgun metagenomic next-generation sequencing (mNGS) combined with Benzonase® Nuclease treatment in identifying pathogens in pediatric patients presenting with respiratory symptoms, in comparison to multiplex viral PCR. 
 
-**Results**:  Analysis of four nasopharyngeal aspirate samples revealed diverse microbial profiles. Benzonase treatment increased the detection of microbial reads without significantly depleting host DNA. Pathogen discovery identified several bacteria and viruses associated with respiratory illnesses, including notable findings such as *Haemophilus influenzae* in symptomatic patients.
+**Results**:  Analysis of four paired nasopharyngeal aspirates revealed diverse microbial profiles. Benzonase treatment increased the detection of microbial reads, even though the relative proportion of host DNA was similar. We identified several bacteria and viruses associated with respiratory illnesses, including the viral pathogens that were detected with targeted viral PCR panels. 
 
-**Conclusions**: mNGS represents a promising tool for comprehensive pathogen detection in pediatric RTIs. The results highlight the importance of refining host DNA depletion strategies to enhance diagnostic capabilities, paving the way for future research on microbial dynamics and their clinical implications in respiratory infections.
+**Conclusions**: mNGS represents a promising tool for comprehensive pathogen detection in pediatric RTIs. The results highlight the importance of refining host DNA depletion strategies to enhance diagnostic capacity, paving the way for future clinical implications in respiratory infections.
 
 **Content**
 1. **Report_images**: Contains all figures displayed in the report.
@@ -20,5 +20,7 @@ Github repository for "Metagenomics for Pathogen Discovery in Children with Resp
 
    2.3 Visualizations: Contains scripts used for data visualization.
 4. **Literature_tables**: Summarizes comprehensive literature reviews of pathogenic microbes referenced in the report.
-5. **PCR_Reports**: This includes the ALLPlex viral PCR assay
-6. **Other**: Contains additional analyses performed on the data.
+5. **PCR_Reports**: This includes the ALLPlex viral PCR assay.
+6. **Abbreviations**: Abbreviations used in report.
+7. **Acknowlegdemants**: Markdown file of Acknowlegements for report. 
+8. **Other**: Contains additional analyses performed on the data.
