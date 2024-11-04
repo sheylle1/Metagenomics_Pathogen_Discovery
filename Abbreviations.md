@@ -14,8 +14,6 @@
 | K. pneumoniae     | Klebsiella pneumoniae                        |
 | S. pneumoniae     | Streptococcus pneumoniae                     |
 | CMV               | Cytomegalovirus                              |
-| E. coli           | Escherichia coli                             |
-| S. maltophilia    | Stenotrophomonas maltophilia                 |
 | Ct                | Cycle Threshold                              |
 | TNA               | Total Nucleic Acid                           |
 | µL                | Microliter                                   |
