@@ -43,6 +43,7 @@ data <- data %>%
     label_position = (ymin + ymax) / 2
   )
 
+#Plot graph (Adjustments can been made to be more visually appealing)
 ggplot(data, aes(ymax = ymax, ymin = ymin, xmax = 9, xmin = 5, fill = color)) +
   geom_rect(color = "black") +                 # Outline each wedge in black
   coord_polar(theta = "y") +                   # Create the circular shape
