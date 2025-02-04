@@ -22,5 +22,5 @@ Github repository for "Metagenomics for Pathogen Discovery in Children with Resp
 4. **Literature_tables**: Summarizes comprehensive literature reviews of pathogenic microbes referenced in the report.
 5. **PCR_Reports**: This includes the Allplex viral PCR assay.
 6. **Abbreviations**: Abbreviations used in report.
-7. **Acknowlegdemants**: Markdown file of Acknowlegements for report. 
+7. **Acknowlegdmants**: Markdown file of Acknowlegdments for report. 
 8. **Other**: Contains additional analyses performed on the data.
